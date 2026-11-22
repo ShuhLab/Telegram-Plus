@@ -74,6 +74,35 @@
   if (settings) settings.addEventListener("click", () => {
     if (panel) { panel.hidden = false; panel.querySelector("button")?.focus(); }
   });
+  // Four anonymous conversion events. Never include a URL, client ID,
+  // conversation body, query string, personal profile, or business data.
+  document.addEventListener("click", (event) => {
+    if (!active) return;
+    const link = event.target.closest("a[href]");
+    if (!link) return;
+    let path;
+    try {
+      const u = new URL(link.href, location.href);
+      if (u.hostname !== "telegram-plus.m2g.pro") return;
+      path = u.pathname;
+    } catch (_) { return; }
+    const labels = {
+      "/go/start": "start",
+      "/go/owner": "owner",
+      "/go/pilot": "pilot",
+      "/go/github": "github"
+    };
+    const action = labels[path];
+    if (!action) return;
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "tplus_" + action + "_click", {
+        transport_type: "beacon"
+      });
+    }
+    if (typeof window.ym === "function") {
+      window.ym(YANDEX_ID, "reachGoal", "tplus_" + action);
+    }
+  }, true);
   if (accept) accept.addEventListener("click", () => choice("yes"));
   if (reject) reject.addEventListener("click", () => choice("no"));
 
