@@ -1,38 +1,40 @@
 # Telegram+ by Shuh Lab
 
-Telegram+ is a pilot AI assistant for Telegram Business messages. The verified owner describes the role, tone, restrictions and escalation rules in ordinary language. The assistant can use approved project documents and hand conversations that need a human to a manager.
+Telegram+ is a pilot AI assistant for Telegram Business conversations. A verified owner can define instructions in natural language, provide documents and spreadsheets, choose authorized chats, and route complex conversations to a human manager.
 
-**Website:** https://telegram-plus.m2g.pro/ · **English:** https://telegram-plus.m2g.pro/en/
+**Public website:** https://telegram-plus.m2g.pro/  
+**English website:** https://telegram-plus.m2g.pro/en/  
+**Try the pilot:** https://telegram-plus.m2g.pro/go/start  
+**Owner dashboard:** https://telegram-plus.m2g.pro/go/owner
 
-**Try the pilot:** https://telegram-plus.m2g.pro/go/start · **Owner dashboard:** https://telegram-plus.m2g.pro/go/owner
+## Capabilities
 
-## How it works
+- **No response scripting:** describe the assistant's role, tone, rules, exceptions, and handoffs in ordinary language.
+- **Project knowledge:** PDF, DOCX, XLSX, CSV, TXT, and JSON; private projects also support folder/ZIP batch uploads.
+- **Telegram Business scope:** the verified owner selects permitted conversations and exclusions, tests replies, and explicitly enables automated responses.
+- **Human handoff:** when staff must decide, the request can be handed over with context.
+- **Conditional Google integrations:** Google Sheets can read current catalog data, and Google Calendar can check time intervals after separate authorization. **Google OAuth is not yet enabled for the public pilot.** Availability, prices, or bookings are not guaranteed without checking the actual source.
+- **Billing model:** intended pay-per-use, without mandatory subscription. Commercial availability is limited to the stated pilot status.
 
-1. Configure the assistant in a private conversation using natural-language instructions — no scripting of every reply.
-2. Add project knowledge from PDF, DOCX, XLSX, CSV, TXT or JSON. Private projects also support folder/ZIP imports.
-3. Choose the authorized Telegram Business chats, test the answers and enable the assistant.
-4. Complex or exceptional questions are handed to a person, with relevant context.
+## Website source
 
-Google Sheets can provide current catalog values and Google Calendar can check selected busy/free intervals **after separate authorization**. Google OAuth is **not yet enabled for the public pilot**; do not represent these integrations as automatically available to every user. Prices, inventory, available slots, and legal or medical assessments must not be invented.
+The [`public-site/`](https://github.com/ShuhLab/Telegram-Plus/tree/main/public-site) directory is a snapshot of publicly served storefront files, including the Russian and English HTML pages, CSS, JavaScript, `robots.txt`, `sitemap.xml`, and an [analytics privacy disclosure](https://telegram-plus.m2g.pro/privacy/analytics/).
 
-## Public website source
+This is **not the executable backend**. Server-side application code, private connections, payment systems, tokens, customer messages, and deployment credentials are deliberately absent. The published HTML uses server URL rewrites and shared `/store/assets/` paths, so local hosting may require path adjustments.
 
-The [`public-site/`](https://github.com/ShuhLab/Telegram-Plus/tree/main/public-site) folder contains a snapshot of the publicly served Russian/English storefront HTML, CSS, JavaScript, `robots.txt`, and `sitemap.xml` as of November 22, 2026.
+### Analytics and international discovery
 
-This is a **public presentation website**, not the executable Telegram+ backend. It uses the production site's `/store/assets/` paths and may require path adaptation to run elsewhere. Production bot logic, database, billing, OAuth secrets, user data, and internal deployment credentials are intentionally **not** included in this public repository.
+- Dedicated **Google Analytics 4** stream: `G-LRFH7DRXW2`.
+- Dedicated **Yandex Metrica** counter: `114510196`.
+- These third-party scripts load **only after visitor consent**, without Yandex session replay (Webvisor). A separate first-party server counter aggregates views and selected conversion links without tracking cookies.
+- Visitors can decline or withdraw consent; [analytics disclosure](https://telegram-plus.m2g.pro/privacy/analytics/) explains how.
+- Canonical public URLs are the `.m2g.pro` subdomain. The site currently has **two fully localized pages (Russian and English)**, with reciprocal `hreflang` and English `x-default`. Other-language copies must be translated before their URLs are submitted for indexing.
+- Sitemap: https://telegram-plus.m2g.pro/sitemap.xml. Changed URLs are submitted to IndexNow participants. IndexNow **does not notify Google**.
 
 ## Feedback and testing
 
-**Try it with a colleague.** Use a fictional sample rule such as “We open at 10. Ask the manager about discounts.” Verify that the assistant answers the opening-hours question from the rule and hands the discount request to a person.
+[Report a bug or suggest an improvement](https://github.com/ShuhLab/Telegram-Plus/issues/new). Use test data only and do not publish real customer conversations, private documents, payment information or credentials.
 
-[Report a bug or suggest an improvement](https://github.com/ShuhLab/Telegram-Plus/issues/new). Include interface language, steps to reproduce, expected behavior and actual result. Do not publish customer conversations or personal information in GitHub Issues.
+**Тестировщикам:** можно задать правило обычным сообщением: «Мы открываемся в 10:00; вопросы о скидках передавай менеджеру». Проверьте ответы на тестовом чате и передайте замечания через Issues.
 
-## Для тестировщиков
-
-Настройте пилот на одном тестовом чате и дайте правило обычным сообщением: «Мы открываемся в 10. Вопросы о скидках передавай менеджеру». Проверьте, что помощник соблюдает правило и корректно передаёт сложные вопросы человеку.
-
-Сайт Telegram+: https://telegram-plus.m2g.pro/ · [Обратная связь](https://github.com/ShuhLab/Telegram-Plus/issues)
-
-Документы и таблицы поддерживаются, но публикация материалов в общих Business-ответах требует одобрения владельца. Google Sheets / Google Calendar — пилотные интеграции, требующие отдельной настройки и авторизации.
-
-[Watch handoff demo](https://www.youtube.com/watch?v=0hFo3nXjTvU) · [Privacy](https://m2g.pro/telegram-plus/privacy) · [Terms](https://m2g.pro/telegram-plus/terms)
+**Public legal documents:** [Terms](https://m2g.pro/telegram-plus/terms) · [Privacy](https://m2g.pro/telegram-plus/privacy) · [Analytics disclosure](https://telegram-plus.m2g.pro/privacy/analytics/) · [Feedback](https://m2g.pro/telegram-plus/feedback)
