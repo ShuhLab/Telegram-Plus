@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://telegram-plus.m2g.pro/</loc><lastmod>2026-11-22</lastmod></url>
-<url><loc>https://telegram-plus.m2g.pro/en/</loc><lastmod>2026-11-22</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://telegram-plus.m2g.pro/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telegram-plus.m2g.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://telegram-plus.m2g.pro/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telegram-plus.m2g.pro/en/" />
+  </url>
+  <url>
+    <loc>https://telegram-plus.m2g.pro/en/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telegram-plus.m2g.pro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://telegram-plus.m2g.pro/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telegram-plus.m2g.pro/en/" />
+  </url>
 </urlset>
