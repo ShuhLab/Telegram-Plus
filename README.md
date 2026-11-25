@@ -4,8 +4,17 @@ Telegram+ is a pilot AI assistant for Telegram Business conversations. A verifie
 
 **Public website:** https://telegram-plus.m2g.pro/  
 **English website:** https://telegram-plus.m2g.pro/en/  
-**Try the pilot:** https://telegram-plus.m2g.pro/go/start  
+**Start free (production bot):** https://telegram-plus.m2g.pro/go/start  
 **Owner dashboard:** https://telegram-plus.m2g.pro/go/owner
+
+## Free personal trial — 25 November 2026
+
+Telegram+ now allows **free self-service personal use** through the production bot [@M2G_AIManager_bot](https://telegram-plus.m2g.pro/go/start). New verified Telegram users may accept the Terms and separate data-processing consent without requesting a manual pilot invitation.
+
+- **Trial allowance:** 20 internal AI units valid for up to **90 days**, subject to actual usage; up to **100 replies total**, at most **20 per day**. Short requests generally consume less than long documents. Trial access may also be limited by overall daily capacity.
+- **No subscription or automatic charge.** Paid top-ups and public paid checkout remain disabled. New companies cannot enable autonomous Telegram Business customer-chat access without a separate reviewed connection.
+- **Release videos with narration and captions:** [Русский (RU)](https://m2g.pro/pilots/release-videos/telegramplus-90day-free-start-ru.mp4) · [English (EN)](https://m2g.pro/pilots/release-videos/telegramplus-90day-free-start-en.mp4) · [Español (ES)](https://m2g.pro/pilots/release-videos/telegramplus-90day-free-start-es.mp4). Video files are release previews, **not** evidence of a YouTube upload.
+- **Full release record:** [CHANGELOG.md](CHANGELOG.md). Product website [RU](https://telegram-plus.m2g.pro/) · [EN](https://telegram-plus.m2g.pro/en/).
 
 ## Capabilities
 
